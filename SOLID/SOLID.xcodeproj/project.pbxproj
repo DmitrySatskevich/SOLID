@@ -13,6 +13,16 @@
 		F5B059B929815673005BF8C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5B059B729815673005BF8C1 /* Main.storyboard */; };
 		F5B059BB29815674005BF8C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5B059BA29815674005BF8C1 /* Assets.xcassets */; };
 		F5B059BE29815674005BF8C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5B059BC29815674005BF8C1 /* LaunchScreen.storyboard */; };
+		F5B059CC29815969005BF8C1 /* CountryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B059CB29815969005BF8C1 /* CountryModel.swift */; };
+		F5B059CE298159BE005BF8C1 /* AppGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B059CD298159BE005BF8C1 /* AppGroup.swift */; };
+		F5B059D32982D552005BF8C1 /* DataFetcherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B059D22982D552005BF8C1 /* DataFetcherService.swift */; };
+		F5B059D52982D594005BF8C1 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B059D42982D594005BF8C1 /* NetworkService.swift */; };
+		F5B059D82982D679005BF8C1 /* NetworkDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B059D72982D679005BF8C1 /* NetworkDataFetcher.swift */; };
+		F5B059DA2982D6C3005BF8C1 /* LocalDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B059D92982D6C3005BF8C1 /* LocalDataFetcher.swift */; };
+		F5B059DC2982D709005BF8C1 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B059DB2982D709005BF8C1 /* DataStore.swift */; };
+		F5B059DE2982D77F005BF8C1 /* ValidateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B059DD2982D77F005BF8C1 /* ValidateService.swift */; };
+		F5B059E02982D7AF005BF8C1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B059DF2982D7AF005BF8C1 /* Constants.swift */; };
+		F5B059E22983C125005BF8C1 /* usersAPI.txt in Resources */ = {isa = PBXBuildFile; fileRef = F5B059E12983C125005BF8C1 /* usersAPI.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +34,16 @@
 		F5B059BA29815674005BF8C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5B059BD29815674005BF8C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F5B059BF29815674005BF8C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5B059CB29815969005BF8C1 /* CountryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryModel.swift; sourceTree = "<group>"; };
+		F5B059CD298159BE005BF8C1 /* AppGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGroup.swift; sourceTree = "<group>"; };
+		F5B059D22982D552005BF8C1 /* DataFetcherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFetcherService.swift; sourceTree = "<group>"; };
+		F5B059D42982D594005BF8C1 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		F5B059D72982D679005BF8C1 /* NetworkDataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataFetcher.swift; sourceTree = "<group>"; };
+		F5B059D92982D6C3005BF8C1 /* LocalDataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataFetcher.swift; sourceTree = "<group>"; };
+		F5B059DB2982D709005BF8C1 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		F5B059DD2982D77F005BF8C1 /* ValidateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateService.swift; sourceTree = "<group>"; };
+		F5B059DF2982D7AF005BF8C1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F5B059E12983C125005BF8C1 /* usersAPI.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = usersAPI.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +76,89 @@
 		F5B059B029815673005BF8C1 /* SOLID */ = {
 			isa = PBXGroup;
 			children = (
-				F5B059B129815673005BF8C1 /* AppDelegate.swift */,
-				F5B059B329815673005BF8C1 /* SceneDelegate.swift */,
-				F5B059B529815673005BF8C1 /* ViewController.swift */,
-				F5B059B729815673005BF8C1 /* Main.storyboard */,
+				F5B059C8298158B8005BF8C1 /* Model */,
+				F5B059C729815897005BF8C1 /* View */,
+				F5B059C62981587E005BF8C1 /* Controller */,
+				F5B059C9298158CB005BF8C1 /* Service */,
+				F5B059CA2981591D005BF8C1 /* Constant */,
 				F5B059BA29815674005BF8C1 /* Assets.xcassets */,
+				F5B059C5298156CF005BF8C1 /* AppDelegate */,
 				F5B059BC29815674005BF8C1 /* LaunchScreen.storyboard */,
 				F5B059BF29815674005BF8C1 /* Info.plist */,
 			);
 			path = SOLID;
+			sourceTree = "<group>";
+		};
+		F5B059C5298156CF005BF8C1 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				F5B059B129815673005BF8C1 /* AppDelegate.swift */,
+				F5B059B329815673005BF8C1 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		F5B059C62981587E005BF8C1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F5B059B529815673005BF8C1 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F5B059C729815897005BF8C1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F5B059B729815673005BF8C1 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F5B059C8298158B8005BF8C1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F5B059CB29815969005BF8C1 /* CountryModel.swift */,
+				F5B059CD298159BE005BF8C1 /* AppGroup.swift */,
+				F5B059E12983C125005BF8C1 /* usersAPI.txt */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F5B059C9298158CB005BF8C1 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				F5B059D12982D531005BF8C1 /* NetworkServices */,
+				F5B059DB2982D709005BF8C1 /* DataStore.swift */,
+				F5B059DD2982D77F005BF8C1 /* ValidateService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		F5B059CA2981591D005BF8C1 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				F5B059DF2982D7AF005BF8C1 /* Constants.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		F5B059D12982D531005BF8C1 /* NetworkServices */ = {
+			isa = PBXGroup;
+			children = (
+				F5B059D22982D552005BF8C1 /* DataFetcherService.swift */,
+				F5B059D62982D65D005BF8C1 /* DataFetcher */,
+				F5B059D42982D594005BF8C1 /* NetworkService.swift */,
+			);
+			path = NetworkServices;
+			sourceTree = "<group>";
+		};
+		F5B059D62982D65D005BF8C1 /* DataFetcher */ = {
+			isa = PBXGroup;
+			children = (
+				F5B059D72982D679005BF8C1 /* NetworkDataFetcher.swift */,
+				F5B059D92982D6C3005BF8C1 /* LocalDataFetcher.swift */,
+			);
+			path = DataFetcher;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +221,7 @@
 			files = (
 				F5B059BE29815674005BF8C1 /* LaunchScreen.storyboard in Resources */,
 				F5B059BB29815674005BF8C1 /* Assets.xcassets in Resources */,
+				F5B059E22983C125005BF8C1 /* usersAPI.txt in Resources */,
 				F5B059B929815673005BF8C1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,9 +233,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5B059DE2982D77F005BF8C1 /* ValidateService.swift in Sources */,
+				F5B059D82982D679005BF8C1 /* NetworkDataFetcher.swift in Sources */,
+				F5B059CE298159BE005BF8C1 /* AppGroup.swift in Sources */,
 				F5B059B629815673005BF8C1 /* ViewController.swift in Sources */,
+				F5B059DC2982D709005BF8C1 /* DataStore.swift in Sources */,
 				F5B059B229815673005BF8C1 /* AppDelegate.swift in Sources */,
+				F5B059CC29815969005BF8C1 /* CountryModel.swift in Sources */,
 				F5B059B429815673005BF8C1 /* SceneDelegate.swift in Sources */,
+				F5B059D32982D552005BF8C1 /* DataFetcherService.swift in Sources */,
+				F5B059DA2982D6C3005BF8C1 /* LocalDataFetcher.swift in Sources */,
+				F5B059D52982D594005BF8C1 /* NetworkService.swift in Sources */,
+				F5B059E02982D7AF005BF8C1 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
