@@ -7,13 +7,11 @@
 
 import Foundation
 
-/*
- Этот класс вытаскивает данные из локального файла и пытается их распарсить
- */
+// MARK: - LocalDataFetcher
 
-/*
- Модуль нижнего уровня для DataFetcherService
- */
+// Этот класс вытаскивает данные из локального файла и пытается их распарсить
+
+// Модуль нижнего уровня для DataFetcherService
 
 final class LocalDataFetcher: NetworkDataFetcher {
     override func fetchGenericJSONData<T>(urlString: String, response: @escaping (T?) -> Void) where T: Decodable {

@@ -30,7 +30,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <action selector="changeLabel:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="XNX-dS-emb"/>
+                                            <action selector="changeLabel:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="Io8-hA-RNK"/>
                                         </connections>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lv4-2m-rIT">
@@ -48,14 +48,14 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="npb-jW-LsE">
                                 <rect key="frame" x="159" y="668" width="75" height="75"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="npb-jW-LsE" secondAttribute="height" multiplier="1:1" id="BrA-9J-bOm"/>
+                                    <constraint firstAttribute="width" secondItem="npb-jW-LsE" secondAttribute="height" multiplier="1:1" id="NYB-Y6-wBl"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Save">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="24"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="saveButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pec-Nl-GVV"/>
+                                    <action selector="saveButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Apb-an-iOO"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -70,9 +70,9 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="myTextField" destination="gfN-bP-3RJ" id="ftM-Ci-GHR"/>
-                        <outlet property="saveButton" destination="npb-jW-LsE" id="tv2-Hg-Rgu"/>
-                        <outlet property="textLabel" destination="lv4-2m-rIT" id="s1Y-K3-BZ2"/>
+                        <outlet property="myTextField" destination="gfN-bP-3RJ" id="0eV-Ub-0r9"/>
+                        <outlet property="saveButton" destination="npb-jW-LsE" id="3hX-gb-fZR"/>
+                        <outlet property="textLabel" destination="lv4-2m-rIT" id="eAh-CU-LHk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

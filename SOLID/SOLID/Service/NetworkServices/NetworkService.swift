@@ -7,9 +7,7 @@
 
 import Foundation
 
-/*
- Модуль нижнего уровня для NetworkDataFetcher
- */
+// Модуль нижнего уровня для NetworkDataFetcher
 
 protocol Networking {
     func request(urlString: String, completion: @escaping (Data?, Error?) -> Void)
@@ -18,7 +16,6 @@ protocol Networking {
 // MARK: - NetworkService
 
 final class NetworkService: Networking {
-    // MARK: Internal
 
     // Что бы закрыь метод для модификации используем протокол Networking
     func request(urlString: String, completion: @escaping (Data?, Error?) -> Void) {
@@ -32,9 +29,7 @@ final class NetworkService: Networking {
 
     func createDataTask(from requst: URLRequest, completion: @escaping (Data?, Error?) -> Void) -> URLSessionDataTask {
         URLSession.shared.dataTask(with: requst, completionHandler: { data, _, error in
-            DispatchQueue.main.async {
-                completion(data, error)
-            }
+            DispatchQueue.main.async { completion(data, error) }
         })
     }
 }

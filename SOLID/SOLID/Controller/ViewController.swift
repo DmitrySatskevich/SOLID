@@ -22,21 +22,20 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
         saveButton.isEnabled = false
-        saveButton.layer.cornerRadius = saveButton.frame.width / 2
 
         dataFetcherService.fetchCountry { countries in
             print("\n- - - fetchCountry: ")
-            print(countries?.first?.Name)
+            print(countries?.first?.Name as Any)
         }
-
+        
         dataFetcherService.fetchFreeGames { freeGames in
-            print(freeGames?.feed.results.first?.name)
+            print(freeGames?.feed.results.first?.name as Any)
         }
-
+        
         dataFetcherService.fetchPaidGames { paidGames in
-            print(paidGames?.feed.results.first?.name)
+            print(paidGames?.feed.results.first?.name as Any)
         }
-
+        
         dataFetcherService.fetchLocalCountry { localCountries in
             print("\n- - - fetchLocalCountry: ")
             print(localCountries?.last?.Name ?? "", "\n")

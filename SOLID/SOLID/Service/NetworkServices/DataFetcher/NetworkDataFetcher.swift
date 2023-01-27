@@ -7,6 +7,8 @@
 
 import Foundation
 
+// MARK: - DataFetcher
+
 /*
  NetworkDataFetcher - Модуль нижнего уровня для DataFetcherService
  NetworkDataFetcher - Модуль высшего  уровня для NetworkService
@@ -19,10 +21,6 @@ protocol DataFetcher {
 // MARK: - NetworkDataFetcher
 
 class NetworkDataFetcher: DataFetcher {
-    
-    var networking: Networking
-    
-    // MARK: Lifecycle
 
     init(networking: Networking = NetworkService()) {
         self.networking = networking
@@ -30,9 +28,12 @@ class NetworkDataFetcher: DataFetcher {
 
     // MARK: Internal
 
+    var networking: Networking
+
     // Когда будем вызывать, ф-я будет требовать возвращать обьект подписанный под Decodable
     // Что бы закрыь метод для модификации используем протоколы
     // Пробуем теперь удалить ф-ю / изменить параметры)
+    
     func fetchGenericJSONData<T: Decodable>(urlString: String, response: @escaping (T?) -> Void) {
         print("fetchGenericJSONData: T.self: \(T.self)")
         networking.request(urlString: urlString) { data, error in
@@ -45,11 +46,8 @@ class NetworkDataFetcher: DataFetcher {
         }
     }
 
-    // MARK: Private
-
     // Декодирование Data в любую модель
     func decodeJSON<T: Decodable>(type: T.Type, data: Data?) -> T? {
-        
         let decoder = JSONDecoder()
         guard let data = data else { return nil }
         do {

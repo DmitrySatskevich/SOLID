@@ -7,6 +7,8 @@
 
 import Foundation
 
+// MARK: - DataStore
+
 class DataStore {
 
     static let shared = DataStore()

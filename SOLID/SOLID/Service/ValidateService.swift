@@ -7,6 +7,8 @@
 
 import Foundation
 
+// MARK: - ValidateService
+
 class ValidateService {
 
     static let shared = ValidateService()
